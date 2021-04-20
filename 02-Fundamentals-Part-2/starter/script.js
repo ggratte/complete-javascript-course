@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /* let hasDriversLicense = false;
 const passTest = true;
@@ -10,7 +10,6 @@ if (hasDriversLicense) console.log('I can drive :D');
 
 // const interface = 'Audio';   
 // const private = 543;  */
-
 
 /* function logger() {
     console.log('My name is Jonas');
@@ -79,7 +78,6 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 }
 
 console.log(yearsUntilRetirement(1986, 'Göran')); */
-
 
 /* function cutFruitPieces(fruit) {
     return fruit * 4;
@@ -196,7 +194,6 @@ console.log(friends.indexOf('sadasa')); // Returns -1 if it can't find the eleme
 console.log(friends.includes('Steven')); // Returns true if element exist
 console.log(friends.includes('asd')); */
 
-
 /* function calcTip(bill) {
     if (bill >= 50 && bill <= 300) {
         return bill * 0.15
@@ -249,7 +246,6 @@ console.log(jonas); */
 
 // Challange
 
-
 /* const jonas = {
     firstName: 'Jonas',
     lastName: 'Schmedtmann',
@@ -260,22 +256,21 @@ console.log(jonas); */
 
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`); */
 
-
-const jonas = {
+/* const jonas = {
     firstName: 'Jonas',
     lastName: 'Schmedtmann',
     birthYear: 1991,
     job: 'teacher',
     friends: ['Michael', 'Peter', 'Steven'],
-    hasDriversLicense: false,
-    /* calcAge: function(birthYear) {
+    hasDriversLicense: false, */
+/* calcAge: function(birthYear) {
         return 2037 - birthYear;
     } */
 
-    /* calcAge: function ()
+/* calcAge: function ()
         return 2037 - this.birthYear; // This means the object that calls for this function. When we call jonas.calcAge this refer to jonas.
     } */
-    calcAge: function() {
+/* calcAge: function() {
         this.age = 2037 - this.birthYear;
         return this.age;
         },    // Here we also return a new value pair to this object which we can store for later.
@@ -292,4 +287,183 @@ console.log(jonas.age);
 console.log(jonas.age);
 
 console.log(jonas.getSummary());
+ */
 
+/* const describeCountry = function (country, population, capitalCity) {
+  return `${country} has ${population} million people and its captial city is ${capitalCity}.`;
+};
+
+const descSweden = describeCountry("Sweden", "10", "Stockholm");
+const descUsa = describeCountry("USA", "331", "Washington");
+const descChina = describeCountry("China", "1444", "Bejing");
+
+console.log(descSweden, descUsa, descChina); */
+
+/* function percentageOfWorld1(population) {
+  return population / 7900;
+}
+
+const swedenPopulationShare = percentageOfWorld1(10);
+const chinaPopulationShare = percentageOfWorld1(1444);
+const usaPopulationShare = percentageOfWorld1(331);
+
+console.log(swedenPopulationShare);
+console.log(chinaPopulationShare);
+console.log(usaPopulationShare);
+
+const percentageOfWorld2 = function (population) {
+  return population / 7900;
+};
+
+const swedenPopulationShare2 = percentageOfWorld2(10);
+const chinaPopulationShare2 = percentageOfWorld2(1444);
+const usaPopulationShare2 = percentageOfWorld2(331);
+
+console.log(swedenPopulationShare2);
+console.log(chinaPopulationShare2);
+console.log(usaPopulationShare2); */
+
+/* const percentageOfWorld3 = (population) => population / 7900;
+
+const swedenPopulationShare3 = percentageOfWorld3(10);
+const chinaPopulationShare3 = percentageOfWorld3(1444);
+const usaPopulationShare3 = percentageOfWorld3(331);
+
+console.log(swedenPopulationShare3);
+console.log(chinaPopulationShare3);
+console.log(usaPopulationShare3); */
+
+/* const percentageOfWorld2 = function (population) {
+  return population / 7900;
+};
+
+const describePopulation = function (country, population) {
+  return `${country} has ${population} million people which is about ${percentageOfWorld2(
+    population
+  )} of the world.`;
+};
+
+console.log(describePopulation("USA", 331)); */
+
+/* const populations = [331, 10, 1444, 83];
+
+console.log(populations.length === 4);
+
+const percentages = [];
+
+const percentageOfWorld2 = function (population) {
+  return population / 7900;
+};
+
+for (let i = 0; i < populations.length; i++) {
+  percentages.push(percentageOfWorld2(populations[i]));
+}
+
+console.log(percentages); */
+
+/* const neighbours = ["Denmark", "Finland", "Norway"];
+
+neighbours.push("Utopia");
+
+console.log(neighbours);
+
+neighbours.pop();
+
+console.log(neighbours);
+
+if (!neighbours.includes("Germany")) {
+  console.log("Probably not a central European country");
+}
+
+neighbours[neighbours.indexOf("Denmark")] = "Danmark";
+
+console.log(neighbours);
+ */
+
+/* const myCountry = {
+  country: "Sweden",
+  capital: "Stockholm",
+  language: "Swedish",
+  population: 10,
+  neighbours: ["Denmark", "Finland", "Norway"],
+  describe: function () {
+    console.log(
+      `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+    );
+  },
+  checkIsIsland: function (neighbours) {
+    this.isIsland = this.neighbours.length === 0 ? true : false;
+    console.log(this.isIsland);
+  },
+};
+
+myCountry.describe();
+
+myCountry.population += 2;
+console.log(myCountry.population);
+myCountry["population"] -= 2;
+
+console.log(myCountry.population);
+
+myCountry.checkIsIsland(myCountry.neighbours);
+
+console.log(myCountry);
+ */
+
+/* for (let voter = 1; i <= 50; voter++) {
+  console.log(`Voter ${voter} is currently voting`);
+} */
+
+/* const populations = [331, 10, 1444, 83];
+
+console.log(populations.length === 4);
+
+const percentages2 = [];
+
+const percentageOfWorld2 = function (population) {
+  return population / 7900;
+};
+
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld2(populations[i]));
+}
+
+console.log(percentages2); */
+
+/* const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+
+for (let x = 0; x < listOfNeighbours.length; x++) {
+  for (let y = 0; y < listOfNeighbours[x].length; y++) {
+    console.log(`Neighbour: ${listOfNeighbours[x][y]}`);
+  }
+} */
+
+const populations = [331, 10, 1444, 83];
+
+console.log(populations.length === 4);
+
+const percentages2 = [];
+
+const percentageOfWorld2 = function (population) {
+  return population / 7900;
+};
+
+/* for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld2(populations[i]));
+}
+
+console.log(percentages2); */
+
+const percentage3 = [];
+let populationCounter = 0;
+
+while (populationCounter < populations.length) {
+  percentages2.push(percentageOfWorld2(populations[populationCounter]));
+  populationCounter++;
+}
+
+console.log(percentages2);
