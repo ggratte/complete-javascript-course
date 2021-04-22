@@ -256,6 +256,10 @@ console.log(jonas); */
 
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`); */
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 /* const jonas = {
     firstName: 'Jonas',
     lastName: 'Schmedtmann',
@@ -270,7 +274,11 @@ console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his bes
 /* calcAge: function ()
         return 2037 - this.birthYear; // This means the object that calls for this function. When we call jonas.calcAge this refer to jonas.
     } */
+<<<<<<< Updated upstream
 /* calcAge: function() {
+=======
+    /* calcAge: function() {
+>>>>>>> Stashed changes
         this.age = 2037 - this.birthYear;
         return this.age;
         },    // Here we also return a new value pair to this object which we can store for later.
@@ -286,6 +294,7 @@ console.log(jonas.age); // Now we can request the age from a stored value since 
 console.log(jonas.age);
 console.log(jonas.age);
 
+<<<<<<< Updated upstream
 console.log(jonas.getSummary());
  */
 
@@ -467,3 +476,160 @@ while (populationCounter < populations.length) {
 }
 
 console.log(percentages2);
+=======
+console.log(jonas.getSummary()); */
+
+ 
+
+
+/* const markMiller = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBmi: function() {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    },
+}
+
+const johnSmith = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBmi: function() {
+        this.bmi = this.mass / this.height ** 2; 
+        return this.bmi
+    },
+}
+
+console.log(markMiller.calcBmi());
+console.log(johnSmith.calcBmi());
+
+console.log(`${markMiller.calcBmi() > johnSmith.calcBmi() ? markMiller.fullName : johnSmith.fullName}'s BMI (${markMiller.bmi > johnSmith.bmi ? markMiller.bmi : johnSmith.bmi}) is higher than ${markMiller.bmi < johnSmith.bmi ? markMiller.fullName : johnSmith.fullName}'s (${markMiller.bmi < johnSmith.bmi ? markMiller.bmi : johnSmith.bmi})`);
+
+if (johnSmith.calcBmi() > markMiller.calcBmi()) {
+    console.log(`${johnSmith.fullName}'s BMI (${johnSmith.bmi}) is higher than ${markMiller.fullName}'s (${markMiller.bmi})`);
+} else if (markMiller.calcBmi() > johnSmith.calcBmi()) {
+    console.log(`${markMiller.fullName}'s BMI (${markMiller.bmi}) is higher than ${johnSmith.fullName}'s (${johnSmith.bmi})`);
+} */
+
+
+/* console.log('Lifting weight repetition 1');
+
+// FOr loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weight repetition ${rep}`);
+} */
+
+/* const jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+]
+
+const types = [];
+
+for (let i = 0; i < jonas.length; i++) {
+    //types[i] = typeof jonas[i];
+    types.push(typeof jonas[i])
+}
+
+
+console.log(types);
+
+console.log(typeof jonas);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = []
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i])
+}
+
+console.log(ages);
+
+// Continue and break
+
+for (let i = 0; i < jonas.length; i++) {
+    if(typeof jonas[i] !== 'string') continue;
+    //types[i] = typeof jonas[i];
+    console.log(jonas[i], typeof jonas[i]);
+}
+
+console.log('--- BREAK WITH NUMBER ---')
+for (let i = 0; i < jonas.length; i++) {
+    if(typeof jonas[i] === 'number') break;
+    //types[i] = typeof jonas[i];
+    console.log(jonas[i], typeof jonas[i]);
+} */
+
+
+/* const jonas = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+]
+
+// 4, 3, 2, 1, 0
+// Backwards for loop
+
+for(let i = jonas.length - 1; i >= 0; i--) {
+    console.log(i, jonas[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`------- Starting exercise ${exercise}`);
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Excercise ${exercise}: Lifting weight repetition ${rep}`);
+    }
+} */
+
+/* let rep = 1;
+
+while (rep <= 10) {
+    //console.log(`Lifting weights repetition ${rep}`);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end...');
+} */
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+
+function calcTip(bill) {
+    if (bill >= 50 && bill <= 300) {
+        return bill * 0.15
+    } else {
+        return bill * 0.2
+    }
+}
+
+const tips = []
+const totals = []
+for (let i = 0; i < bills.length; i++) {
+    tips[i] = calcTip(bills[i])
+    totals[i] = bills[i] + tips[i]
+}
+
+
+function calcAvg(arr) {
+    let total = 0
+    for (let i = 0; i < arr.length; i++) {
+        total += arr[i]
+    };
+    const avg = total / arr.length;
+    return avg;
+}
+
+console.log(calcAvg(totals))
+>>>>>>> Stashed changes
